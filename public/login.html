@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>钟表专卖商城</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/common.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+</head>
+</head>
+<body>
+	<div id="bg"></div>
+
+	<div id="sidebar-wrap">
+		<div id="sidebar">
+			<div class="login-btn-con">
+				<div class="loginbtn">
+					<a href="login.html">登录</a>
+				</div>
+				<div class="registerbtn">
+					<a href="login.html">注册</a>
+				</div>
+			</div>
+			<div class="sidebar-logo">
+				<img src="images/f-logo.png" />
+			</div>
+			<ul class="sidebar-nav">
+				<li>
+					<a href="index.html">商城首页</a>
+				</li>
+				<li>
+					<a href="#">所有商品</a>
+				</li>
+				<li>
+					<a href="#">商城动态</a>
+				</li>
+				<li>
+					<a href="#">关于店铺</a>
+				</li>
+				<li>
+					<a href="#">线下门店</a>
+				</li>
+			</ul>
+			<div class="s-bottom">
+				<p>
+					<em></em>
+					<em></em>
+					<em></em>
+					<em></em>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="cover-wrap">
+		<div id="cover">
+			<div class="cover-search">搜索</div>
+			<input type="text" name="" placeholder="请输入关键字" />
+			<div class="cover-btn">
+				<input type="submit" value="确认" />
+				<input type="button" name="" value="取消" id="cancel" />
+			</div>
+		</div>
+	</div>
+
+
+	<!------------------------- top ------------------------>
+	<div id="top-wrap">
+		<div id="top">
+			<div class="flt welcome">
+				<img src="images/clock.jpg" class="flt" />
+				<span class="flt">在线时间 08:30~21:30</span>
+				<span class="flt">欢迎访问钟表专卖商城！</span>
+			</div>
+			<div class="frt icon">
+				<a href="login.html" class="flt">
+					<img src="images/login.jpg" />
+				</a>
+				<a href="#" class="flt">
+					<img src="images/cart.jpg" />
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!------------------------- header ------------------------>
+	<div id="header-wrap">
+		<div id="header">
+			<h1 id="logo">
+				<a href="index.html">
+					<img src="images/logo.png" />
+				</a>
+			</h1>
+			<ul class="nav fz14">
+				<li>
+					<em></em>
+					<a href="index.html">商城首页</a>
+				</li>
+				<li>
+					<a href="#">所有商品</a>
+				</li>
+				<li>
+					<a href="#">商城动态</a>
+				</li>
+				<li>
+					<a href="#">关于店铺</a>
+				</li>
+				<li>
+					<a href="#">线下门店</a>
+				</li>
+			</ul>
+			<div class="frt search">
+				<input type="text" placeholder="搜索商品关键字">
+				<<img src="images/search.jpg" alt="">
+			</div>
+		</div>
+
+		<div id="header1">
+			<a href="#" class="flt search-three">
+				<img src="images/nav.png" />
+			</a>
+			<h1 id="logo1">
+				<a href="index.html">
+					<img src="images/logo.png" />
+				</a>
+			</h1>
+			<div class="icon">
+				<a href="#" class="flt" id="search">
+					<img src="images/search.jpg" alt="">
+				</a>
+				<a href="#" class="flt">
+					<img src="images/login.jpg" />
+				</a>
+				<a href="#" class="flt">
+					<img src="images/cart.jpg" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="login-wrap">
+		<div id="login">
+			<div class="login-reg">
+				<div class="title">
+					<img src="images/login-logo.png" />
+					<h2>登录 | 注册</h2>
+				</div>
+
+				<div class="tab">
+					<form method="post" action="loginCheck" id="loginCheck">
+						<label>手机/用户/邮箱</label>
+						<div class="person">
+							<img src="images/user.bmp" />		
+							<input type="text" name="userName" id="userName"/>
+							<span></span>
+						</div>
+						<label>密码</label>
+						<div class="sercet">
+							<img src="images/lock.bmp" />							
+							<input type="password" name="userPass" id="userPass1"/>
+							<span></span>
+						</div>
+						<div class="rember">
+							<input type="checkbox" />记住我（请在私人计算机上使用此功能）
+						</div>
+						<input id="login-btn" type="button" value="登录" />
+						<input id="reg-btn" type="button" value="注册" />
+						<div class="third">
+							<span>第三方登录：</span>
+							<a href="javascript:;"></a>
+						</div>
+						<a href="javascript:;">忘记密码？点这里找回</a>
+					</form>
+
+					<form method="post" action="regSave" id="regSave" style="display: none;">
+						<label>电话号码<i>*</i></label>
+						<div class="person">
+							<img src="images/phone.bmp" />		
+							<input type="text" name="userPhone" id="userPhone"/>
+							<span></span>
+						</div>
+						<label>短信验证码<i>*</i></label>
+						<div class="person">									
+							<input type="text" name="userYZM" id="userYZM"/>
+							<a href="javascript:;">获取</a>
+							<span></span>
+						</div>
+						<label>邮箱<i>*</i></label>
+						<div class="person">									
+							<input type="text" name="userEmail" id="userEmail"/>
+							<span></span>
+						</div>
+						<label>密码<i>*</i></label>
+						<div class="sercet">
+							<img src="images/lock.bmp" />							
+							<input type="password" name="userPass" id="userPass2"/>
+							<span></span>
+						</div>
+						<label>再输一次密码</label>
+						<div class="sercet">						
+							<input type="password" name="userPass" id="userPass3"/>
+							<span></span>
+						</div>
+						<div class="rember">
+							<input type="checkbox" />
+							我同意《用户手册》和《保密条款》
+						</div>
+						<input id="reg-btn1" type="button" value="注册" />
+						<input id="login-btn1" type="button" value="已有账号了？请登录" />
+						<div class="third">
+							<span>第三方登录：</span>
+							<a href="javascript:;"></a>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-wrap">
+		<footer>
+			<h4>用户注册/登录说明</h4>
+			<p>1.演示用户名：<em>demouser</em>；密码：<em>demo1234</em></p>
+			<p>2.实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：《<em>用户管理中相关邮件的配置</em>》</p>
+			<p>3.新用户注册后的审核方式有三种：自动核准、邮件激活、需要管理员批准（即人工审核），详情可参考教程《<em>如何设置用户注册后的审核方式</em>》</p>
+		</footer>
+	</div>
+
+	<!------------------------- gotop ------------------------>
+	<ul id="gotop">
+		<li>
+			<em></em>
+		</li>
+		<li>
+			<em></em>
+		</li>
+		<li id="back">
+			<em></em>
+		</li>
+	</ul>
+</body>
+</html>
+<script type="text/javascript" src="javascripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts/common.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		$("#reg-btn").click(function(){
+			$("#regSave").css({"display":"block"});
+		});
+		$("#reg-btn").click(function(){
+			$("#loginCheck").css({"display":"none"});
+		});
+
+		$("#login-btn1").click(function(){
+			$("#regSave").css({"display":"none"});
+		});
+		$("#login-btn1").click(function(){
+			$("#loginCheck").css({"display":"block"});
+		});
+	});
+</script>
